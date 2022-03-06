@@ -1,0 +1,166 @@
+<html>
+<head>
+<title>admin home</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+
+</head>
+<style>
+    
+    {
+        margin: 0;
+        padding: 0;
+    }
+ @import"https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";   
+body
+{
+    background-image: url('https://wallpapercave.com/wp/wp8664410.jpg');
+    background-size: cover;
+    background-position: center;   
+    font-family: sans-serif;
+}
+label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 50px;
+    padding: 0 100px;
+    font-weight: bold;
+    float: left;
+}
+.menu-bar 
+{
+    background: rgb(206, 136, 6);
+    text-align: center;
+    
+}   
+.menu-bar ul
+{
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+
+} 
+.menu-bar ul li
+{
+    width: 120px;
+    margin: -10px;
+    padding: 15px;
+}
+.menu-bar ul li a
+{
+    text-decoration: none;
+    color: #fff;
+}
+.active,.menu-bar ul li:hover
+{
+    background: #64d309a4;
+    border-radius: 25px;
+
+}
+.menu-bar, .fa
+{
+    margin-right: 8px;
+
+}
+.sub-menu-1
+{
+    display: none;
+}
+.menu-bar ul li:hover .sub-menu-1
+{
+    display: block;
+    position: absolute;
+    background: rgb(204, 158, 7);
+    border-radius: 25px;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul
+{
+    display: block;
+    margin: 10px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li
+{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child
+{
+    border-bottom: none;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover
+{
+    color: #1bdb14;
+}
+.sub-menu-2
+{
+    display: none;
+}
+.menu-bar ul li:hover .sub-menu-2
+{
+    display: block;
+    position: absolute;
+    background:  rgb(204, 158, 7);
+    border-radius: 25px;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.menu-bar ul li:hover .sub-menu-2 ul
+{
+    display: block;
+    margin: 10px;
+}
+.menu-bar ul li:hover .sub-menu-2 ul li
+{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.menu-bar ul li:hover .sub-menu-2 ul li:last-child
+{
+    border-bottom: none;
+}
+.menu-bar ul li:hover .sub-menu-2 ul li a:hover
+{
+    color: #24c904;
+}    
+</style>
+<body>
+    <div  class="menu-bar">
+        <nav>
+            <label class="logo">ADMIN</label>
+    <ul>
+        <li class="active"><a href="#"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
+        </li>
+        <li><a href="#"><i class="fa fa-book"></i>Services</a>
+            <div class="sub-menu-1">
+                <ul>
+                    <li><a href="addservice.html">Add Services</a></li>
+                    <li><a href="updateservice.php">Edit Services</a></li>
+                    <li><a href="viewserviceadmin.php">View Services</a></li>
+            
+                </ul>
+            </div>
+        </li>
+        <li><a href="aboutus.html"><i class="fa fa-user"></i>About </a>
+            <div class="sub-menu-2">
+                <ul>
+                    <li><a href="viewuseradmin.php">Users</a></li>
+                    
+                </ul>
+            </div>
+        </li>
+        <li><a href="viewbookingadmin.php"><i class="fa fa-phone"></i>Booking</a></li>
+        <li><a href="viewfeedback.php"><i class="fa fa-book"></i>Feedback</a></li>
+        <li><a href="index.html"><i class="fa fa-user"></i>Logout</a></li>
+    </ul>
+        </nav>
+</body>
+</html>
